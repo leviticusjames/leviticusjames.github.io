@@ -1,0 +1,263 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-family: 'Prociono', serif;
+}
+
+.bkgd-bt-lt { /* background blue*/
+  height: 40px;
+  background-image: linear-gradient(to bottom left, rgb(255, 255, 255) 80%, rgba(79, 79, 203, 0.35));
+  overflow: hidden;
+  z-index: -2;
+}
+
+.bkgd-bt-rt { /* background blue*/
+  height: 40px;
+  background-image: linear-gradient(to bottom right, rgb(255, 255, 255) 80%, rgba(79, 79, 203, 0.35));
+  overflow: hidden;
+  z-index: -2;
+}
+
+.bkgd-top-lt { /* background blue*/
+  height: 40px;
+  background-image: linear-gradient(to top left, rgb(255, 255, 255) 80%, rgba(79, 79, 203, 0.35));
+  overflow: hidden;
+  z-index: -2;
+}
+
+.bkgd-top-rt { /* background blue*/
+  height: 35px;
+background-image: linear-gradient(to top right, rgb(255, 255, 255) 80%, rgba(79, 79, 203, 0.35));
+}
+
+.sct-bckgd-lt { /* background blue*/
+  background-image: linear-gradient(to left, rgb(255, 255, 255) 61%, rgba(79, 79, 203, 0.35));
+  overflow: hidden;
+  z-index: -2;
+}
+
+.sct-bckgd-rt { /* background blue*/
+  background-image: linear-gradient(to right, rgb(255, 255, 255) 61%, rgba(79, 79, 203, 0.35));
+  overflow: hidden;
+  z-index: -2;
+}
+
+/* Multiple selectors and element styles */
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  box-shadow: 1px 1px 2px #888888;
+  background-color: rgb(203,79,79);
+  border: none;
+  padding: 2px;
+  color: white;
+}
+
+li {
+  display: inline-block;
+  list-style: none; 
+}
+
+.sct-title{
+  padding-left: 80px;
+  padding-bottom: 8px;
+}
+
+.title-font {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.nav a, .logo a {
+  color: rgb(203,79,79);
+}
+
+.books:hover, button:hover {
+  cursor: pointer;
+}
+
+.img-style {
+  box-shadow: 1px 1px 1px #888888 ;
+  border-radius: 1px;
+}
+
+/* HEADER STYLES  */
+
+.header-background {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  background-image: linear-gradient(to top right, rgb(255, 255, 255) 65%, rgba(79, 79, 203, 0.35));
+  overflow: hidden;
+  z-index: -2;
+}
+
+header {
+  padding: 0;
+  }
+
+.logo {
+  text-align: left;
+  padding-left: 12%;
+  padding-top: 25px;
+}
+
+/* Navigation styles.  */
+.nav {
+  text-align: right;
+}
+
+.nav li {
+  margin-left: 10px;
+}
+
+.nav a:hover {
+  cursor: pointer;
+}
+
+/* MAIN STYLES*/
+
+.centered-sections { /* centers content and allows for the blue background*/
+  width: 70%;
+  margin: auto;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+/* LATEST STYLES */
+.latest {
+  padding: 50px 20px 30px 20px;
+}
+
+.latestImage {
+  float: left;
+  margin: 0 20px;
+}
+
+/* COLLECTION STLYES */
+.collections {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px auto;
+}
+
+.books {
+  text-align: center;
+}
+
+.books h4 {
+  margin-top: 10px;
+}
+
+/* BIO STYLES */
+.bio {
+  padding: 25px 0;
+}
+
+.portrait {
+  float: left;
+  margin: 5px 15px 5px 0;
+}
+
+.bio p {
+  line-height: 1.3;
+  text-indent: 5px;
+  padding-top: 10px
+}
+
+.margin-add {
+  margin-top: 40px;
+}
+
+/* CONTACT STYLES */
+
+form {
+  max-width: 75%;
+  min-width: 200px;
+  height: 400px; 
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 95%;
+  margin: 0 auto 7px;
+  padding: 5px;
+}
+
+textarea {
+  width: 95%;
+  height: 30%;
+  margin: 0 auto;
+  resize: none;
+}
+
+textarea[placeholder] {
+  padding: 6px 10px;
+}
+
+button[type="submit"] {
+  width: 60px;
+  margin: 18px 0 4px 34px;
+}
+
+button[type="reset"] {
+  width: 60px;
+  
+  }
+
+small {
+  padding-left: 32px;
+}
+
+/* FOOTER STYLES */
+footer {
+  clear: left;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-background {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-image: linear-gradient(to bottom left, rgb(255, 255, 255) 65%, rgba(79, 79, 203, 0.35));
+  overflow: hidden;
+  z-index: -2;
+}
+
+.team_awesome {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.team-awesome-logo {
+  display: flex;
+  align-items: center;
+}
+
+.social li {
+  margin-left: 10px;
+}

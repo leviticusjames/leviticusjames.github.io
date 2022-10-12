@@ -1,1 +1,145 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leviticus James</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prociono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="body-container">
+    <header>
+      <div class="header-background"></div>
+      <div class="logo">
+        <h1><li><a href="#home">-LEVITICUS JAMES-</a></li></h1>
+      </div>
+      <!-- <div id="home" class="nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#books">Books</a></li>
+          <li><a href="#bio">Bio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div> -->
+    </header>
+    <div class="bkgd-bt-lt"></div>  
+    <main>
+      <div class="sct-bckgd-lt">
+      <!-- LATEST BOOK -->
+      <div id="latest" class="latest centered-sections">
+        <h2 class="sct-title">Latest</h2>
+        <div class="clearfix">
+          <div class="latestImage"><img id="latestImage" class="img-style" src="" alt="Book Cover" width="190"></div>
+          <h2 id="latestTitle" class="latestTitle title-font"></h2>
+          <div id="latestSubtitle" class="latestSubtitle"></div>  
+          <div id="latestBlurb" class="latestBlurb"></div>
+          <button onclick="visitPage();">Buy Now</button>
+        </div>
+      </div>
+      </div>
+      
+      <!-- BOOK SECTIONS.  -->
+      <div class="bkgd-top-lt"></div>
+      <div class="bkgd-bt-rt"></div>
+      <div class= "sct-bckgd-rt">
+        <h2 class="centered-sections sct-title">Sister Planet Collection</h2>
+        <div class="collections centered-sections">
+          
+          <div id="book1" class="books">
+            <div class="bookImage"><img class="img-style" onclick="visitPage1();" id="book1Image" src="" alt="Book Cover" width="107"></div>
+            <h4 id="book1Title" class="title-font" onclick="visitPage1();"></h4>
+            <button onclick="visitPage1();">Buy Now</button>
+          </div>
+          <div id="book2" class="books">
+            <div class="book2Image"><img class="img-style" onclick="visitPage2();" id="book2Image" src="" alt="Book Cover" width="107"></div>
+            <h4 id="book2Title" class="title-font" onclick="visitPage();"></h4>
+            <button onclick="visitPage2();">Buy Now</button>
+          </div>
+          <div id="book3" class="books">
+            <div class="book3Image"><img class="img-style" onclick="visitPage3();" id="book3Image" src="" alt="Book Cover" width="107"></div>
+            <h4 id="book3Title" class="title-font" onclick="visitPage3();"></h4>
+            <button onclick="visitPage3();">Buy Now</button>
+          </div>
+          <div id="book4" class="books">
+            <div class="book4Image"><img class="img-style" onclick="visitPage4();" id="book4Image" src="" alt="Book Cover" width="107"></div>
+            <h4 id="book4Title" class="title-font" onclick="visitPage4();"></h4>
+            <button onclick="visitPage4();">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="bkgd-top-rt"></div>
+      <!-- ABOUT/BIO Section -->
+      <div class="bkgd-bt-lt"></div>
+      <div class="sct-bckgd-lt">
+        <div id="bio" class="bio centered-sections">
+          <h2 class="sct-title">Who is This Guy?</h2>
+          <div class="clearfix">
+            <img class="portrait img-style" src="images\Leviticus_portrait_200x297.jpg" alt="Leviticus James smiling.">
+            <p class="margin-add">Story is how I make sense of my world—how I deconstruct it, experience it, and share it. Writing is how I join the song that story sings. It’s my passion. My contribution. Whether it’s a spark of inspiration or a bout of melancholy, I turn to words to help me express it.
+            </p>
+            <p>
+            I constantly push myself to write clearly, concisely, and professionally. My background is in marketing, but I went back and got my master’s degree in communication. I wrote my thesis on keeping and sharing secrets. Why? Because come on! What a cool field of study?
+          </p>
+          <p>
+            If you wanna be friends, make sure to follow me on Amazon for book updates, Twitter for writing updates, and Facebook for general nonsense. (No pressure on being friends. It's totally up to you. It's not like I'll be crushed or anything. I'm not crying, you're crying.)</p>
+          </div>
+        </div>
+      </div>
+      <div class="bkgd-top-lt"></div>
+<!-- CONTACT SECTION TO SUBMIT A QUESTION -->
+      <div class="bkgd-bt-rt"></div>
+      <div class="sct-bckgd-rt">
+      <div id="contact" class="contact centered-sections">
+        <h2 class="sct-title">Let's Talk</h2>
+        <form method="post" action="">
+        
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" maxlength="1000" placeholder="What's on your mind?" required></textarea>
+            <div class="btn-sub-res">         
+            <button type="submit" id="btnSubmit">Submit</button>
+            <div>
+              <p><small>(Powered by <a rel="nofollow" href="Un-static Forms">Un-static Forms</a>)</small></p>
+            </div>
+          </div>
+        </form>
+        <div id="sentMess" class="sentMess"></div>
+      </div>
+      </div>
+      <div class="bkgd-top-rt"></div>
+    </main>
+
+    <footer>
+      <div class="footer-background"></div>
+      <div class="team_awesome centered-sections">
+        <div class="team-awesome-logo">  
+        <img alt="team awesome logo" style="width: 110px; object-fit: cover;" src="images/teamAwesomeLogo.png">
+          <p>A member of Team Awesome Press<br>
+          teamawesomepress@gmail.com
+          </p>
+        </div>
+        
+          <div id="social" class="social">
+            <ul>
+              <li><a href="https://www.facebook.com/author.leviticus"><img src="images/f_logo_RGB-Blue_72.png" alt="Facebook Logo" style="width: 32px; height: 32px; object-fit: cover;"></a></li>
+              <li><a href="https://twitter.com/leviticuswrites"><img src="images/Twitter social icons - circle - blue.png" alt="Twitter Logo" style="width: 32px; height: 32px; object-fit: cover;">
+              </a></li>
+            </ul>
+          </div>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
