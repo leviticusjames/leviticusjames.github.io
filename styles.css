@@ -223,19 +223,14 @@ textarea[placeholder] {
   padding: 6px 10px;
 }
 
+.btnUnStatic {
+  margin: 0 0 0 0.8%;
+}
+
 button[type="submit"] {
   width: 60px;
-  margin: 18px 0 4px 34px;
 }
 
-button[type="reset"] {
-  width: 60px;
-  
-  }
-
-small {
-  padding-left: 32px;
-}
 
 /* FOOTER STYLES */
 footer {
