@@ -10,22 +10,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Prociono&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="body-container">
     <header>
       <div class="header-background"></div>
       <div class="logo">
-        <h1><li><a href="#home">-LEVITICUS JAMES-</a></li></h1>
+        <h1>-LEVITICUS JAMES-</h1>
       </div>
-      <!-- <div id="home" class="nav">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#books">Books</a></li>
-          <li><a href="#bio">Bio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div> -->
     </header>
     <div class="bkgd-bt-lt"></div>  
     <main>
@@ -34,11 +27,11 @@
       <div id="latest" class="latest centered-sections">
         <h2 class="sct-title">Latest</h2>
         <div class="clearfix">
-          <div class="latestImage"><img id="latestImage" class="img-style" src="" alt="Book Cover" width="190"></div>
-          <h2 id="latestTitle" class="latestTitle title-font"></h2>
-          <div id="latestSubtitle" class="latestSubtitle"></div>  
-          <div id="latestBlurb" class="latestBlurb"></div>
-          <button onclick="visitPage();">Buy Now</button>
+            <div class="latestImage"><img id="latestImage" class="img-style" src="" alt="Book Cover" width="190"></div>
+            <h2 id="latestTitle" class="latestTitle title-font"></h2>
+            <div id="latestSubtitle" class="latestSubtitle"></div>  
+            <div id="latestBlurb" class="latestBlurb"></div>
+            <button onclick="visitPage();">Buy Now</button>
         </div>
       </div>
       </div>
@@ -80,7 +73,7 @@
           <h2 class="sct-title">Who is This Guy?</h2>
           <div class="clearfix">
             <img class="portrait img-style" src="images\Leviticus_portrait_200x297.jpg" alt="Leviticus James smiling.">
-            <p class="margin-add">Story is how I make sense of my world—how I deconstruct it, experience it, and share it. Writing is how I join the song that story sings. It’s my passion. My contribution. Whether it’s a spark of inspiration or a bout of melancholy, I turn to words to help me express it.
+            <p >Story is how I make sense of my world—how I deconstruct it, experience it, and share it. Writing is how I join the song that story sings. It’s my passion. My contribution. Whether it’s a spark of inspiration or a bout of melancholy, I turn to words to help me express it.
             </p>
             <p>
             I constantly push myself to write clearly, concisely, and professionally. My background is in marketing, but I went back and got my master’s degree in communication. I wrote my thesis on keeping and sharing secrets. Why? Because come on! What a cool field of study?
@@ -96,25 +89,29 @@
       <div class="sct-bckgd-rt">
       <div id="contact" class="contact centered-sections">
         <h2 class="sct-title">Let's Talk</h2>
-        <form method="post" action="">
+        <form id="letsTalk" method="post" action="">
         
             <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" required>
+            <input type="text" id="fname" name="firstname">
             <label for="email">Email</label>
             <input type="email" id="email" name="email" required>
-          
             <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" required>
+            <input type="text" id="subject" name="subject">
             <label for="message">Message</label>
             <textarea id="message" name="message" maxlength="1000" placeholder="What's on your mind?" required></textarea>
-            <div class="btn-sub-res">         
-            <button type="submit" id="btnSubmit">Submit</button>
+            <div id="sentMess" class="sentMess">
+              <div class="envelope"></div>
+              <h3>Message Sent</h3>
+              <p>I'll be in touch.</p>
+            </div>
+            <div id="btnUnStatic">       
+              <button type="submit" id="btnSubmit" onclick="submitForm()">Submit</button>
             <div>
               <p><small>(Powered by <a rel="nofollow" href="Un-static Forms">Un-static Forms</a>)</small></p>
             </div>
           </div>
         </form>
-        <div id="sentMess" class="sentMess"></div>
+        
       </div>
       </div>
       <div class="bkgd-top-rt"></div>

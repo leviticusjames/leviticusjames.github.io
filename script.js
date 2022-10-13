@@ -127,13 +127,36 @@ function visitPage4(){
 window.open(book4.amazon);
 }
 
+submitForm();
 function submitForm() { // show the form and hide the sign up button.
   var x = document.getElementById("sentMess");
-  var y = document.getElementById("btnSubmit");
-  if (x.style.display === "none") {
+  var y = document.getElementById("message");
+  var z = document.getElementById("btnUnStatic");
+  var email = document.getElementById("email");
+  if (x.style.display === "none" && email.innerHTML !== "") {
     x.style.display = "block";
     y.style.display = "none";
+    z.style.display = "none";
   } else {
     x.style.display = "none";
   }
 }
+
+const form = document.getElementById('letsTalk');
+
+document.addEventListener('submit', function handleSubmit(event) {
+  // show the form and hide the sign up button.
+    var x = document.getElementById("sentMess");
+    var y = document.getElementById("message");
+    var z = document.getElementById("btnUnStatic");
+    
+    if (x.style.display === "none") {
+      x.style.display = "block";
+      y.style.display = "none";
+      z.style.display = "none";
+    } else {
+      x.style.display = "none";
+    }
+  event.preventDefault()
+  form.reset()
+});
